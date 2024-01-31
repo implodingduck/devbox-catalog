@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://github.com/Azure/deployment-environments/releases/download/2022-11-11-preview/manifest.schema.json
+name: Basic Landing Zone
+version: 1.0.0
+summary: basic landing zone environment
+description: Deploys a basic landing zone environment
+runner: ARM
+templatePath: main.bicep
+parameters:
+- id: "location"
+  name: "location"
+  description: "Location to deploy the environment resources"
+  default: "[resourceGroup().location]"
+  type: "string"
+  required: false
+- id: "name"
+  name: "name"
+  description: "Name of the Landing Zone Resources"
+  default: ""
+  type: "string"
+  required: false
