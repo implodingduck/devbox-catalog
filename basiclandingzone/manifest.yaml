@@ -4,7 +4,7 @@ version: 1.0.0
 summary: basic landing zone environment
 description: Deploys a basic landing zone environment
 runner: ARM
-templatePath: main.bicep
+templatePath: azuredeploy.json
 parameters:
 - id: "location"
   name: "location"
