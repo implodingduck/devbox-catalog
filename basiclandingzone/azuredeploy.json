@@ -58,8 +58,10 @@
       "name": "[format('kv-{0}-{1}', parameters('name'), substring(uniqueString(resourceGroup().id), 0, 4))]",
       "location": "[parameters('location')]",
       "properties": {
-        "enabledForTemplateDeployment": true,
+        "accessPolicies": [],
         "createMode": "default",
+        "enableRbacAuthorization": true,
+        "enabledForTemplateDeployment": true,
         "sku": {
           "name": "standard",
           "family": "A"
